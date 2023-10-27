@@ -1,0 +1,17 @@
+{
+    "notes": [
+        {
+            "id": 0, 
+            "title": "Creative",
+             "body": "Creativity is the greatest gift of humanity."
+        },
+        {
+            "id": 1,
+            "title": "Test",
+            "body": "This is a test"
+        }
+    ],
+    "preferences": {
+        "scheme": "light"
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteMinder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div id="overview-nav">
+            <!-- Home Navbar -->
+            <nav id="nav-bar"></nav>
+            <h1 id="logo">NoteMinder</h1>
+            <div id="dark-mode-btn"></div>
+        </div>
+
+        <div id="single-note-nav-view">
+            <!-- Viewing Navbar -->
+            <div id="back-button"></div>
+            <h1 id="single-note-title"></h1>
+            <div id="edit-btn"></div>
+        </div>
+
+        <div id="single-note-nav-edit">
+            <!-- Editing Navbar -->
+            <div id="back-button"></div>
+            <h1 id="single-note-title"></h1>
+            <div id="view-btn"></div>
+        </div>
+    </header>
+
+    <main id="app-main">
+        <div id="overview-view">
+            <section id="note-list">
+                <ul class="notes">
+                <!-- Notes will be dynamically added here -->
+                </ul>
+            </section>
+            <button id="new-note-btn" type="button"></button>
+        </div>
+        <div id="single-note-view">
+            <h2 id="note-title"></h2>
+
+            <!-- Viewing -->
+            <p id="single-note-edit"></p>
+            <!-- Editing -->
+            <textarea id="note-content note-edit"></textarea>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

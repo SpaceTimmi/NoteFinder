@@ -7,12 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="screen">
     <header>
         <div id="overview-nav">
             <!-- Home Navbar -->
-            <nav id="nav-bar"></nav>
-            <h1 id="logo">NoteMinder</h1>
-            <div id="dark-mode-btn"></div>
+            <div id="nav-container">
+                <img id="nav-menu-icon" src="./icons/navigation-menu/icons8-menu-30.png" alt="navigation">
+                <div id="nav-bar"></div>
+            </div>
+            <!-- Logo -->
+            <div id="logo-div">
+                <img id="logo" src="./images/logo.JPG" alt="logo" >
+            </div>
+            <!-- Dark Mode Button -->
+            <div id="dark-mode-container">
+                <img id="dark-mode-icon"  src="./icons/bulb/icons8-bulb-30.png" alt="dark mode button">
+                <div id="dark-mode-btn"></div>
+            </div>
         </div>
 
         <div id="single-note-nav-view">
@@ -49,6 +60,7 @@
 
         </div>
     </main>
+    </div>
 
     <script src="script.js"></script>
 </body>

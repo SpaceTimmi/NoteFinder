@@ -1,18 +1,61 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #BFBAA8;
+    /* */
+    text-align: center;
+    width: 100%;
+    
 }
 
+#screen {
+    background-color: #F1EFEA;
+    /* */
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+
+}
+
+/*Styling for Large Screens */
+@media screen and (min-width:1200px) {
+    #screen {
+        width: 80%;
+    }
+
+}
+
+/*Styling for Small Screens */
+@media screen and (max-width:1200px) {
+    #screen {
+        width: 100%;
+    }
+}
+
+/* Navigation Bar */
+#overview-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
 header {
-    background-color: #817E7E;
-    color: #fff;
+    /*
+    background-color: black;
+    */
     text-align: center;
     padding: 20px;
+    height: 32px;
 }
 
 #logo {
-    font-style: italic;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 120px;
+    border: 1px solid #F1EFEA;
+    border-radius: 10px;
 }
+
+
 
 main {
     display: flex;

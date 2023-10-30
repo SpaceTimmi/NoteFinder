@@ -1,19 +1,78 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #BFBAA8;
-    /* */
     text-align: center;
     width: 100%;
     
 }
 
+header {
+    text-align: center;
+    padding: 20px;
+    height: 32px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
 #screen {
     background-color: #F1EFEA;
-    /* */
     display: inline-block;
     margin: 0 auto;
     padding: 3px;
 
+}
+
+/* Navigation Bar */
+#overview-nav, 
+#single-note-nav-view,
+#single-note-nav-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 120px;
+    border: 1px solid #F1EFEA;
+    border-radius: 10px;
+}
+
+#note-title {
+    font-size: 20px;
+    color: #898884;
+}
+
+/* Navigation Buttons &  Icons */
+#nav-container,
+#dark-mode-container,
+#back-btn-container,
+#edit-btn-container,
+#undo-btn-container,
+#view-btn-container {
+    border-radius: 5px;
+    padding: 4px;
+}
+
+#nav-container:hover,
+#dark-mode-container:hover,
+#back-btn-container:hover,
+#edit-btn-container:hover,
+#undo-btn-container:hover,
+#view-btn-container:hover {
+    cursor: pointer;
+}
+
+#nav-container:active,
+#dark-mode-container:active,
+#back-btn-container:active,
+#edit-btn-container:active,
+#undo-btn-container:active,
+#view-btn-container:active {
+    background-color: black;
 }
 
 /*Styling for Large Screens */
@@ -31,37 +90,18 @@ body {
     }
 }
 
-/* Navigation Bar */
-#overview-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+
+
+
+/* Temporary */
+#single-note-nav-view,
+#single-note-nav-edit {
+    display: none;
 }
 
 
 
-header {
-    /*
-    background-color: black;
-    */
-    text-align: center;
-    padding: 20px;
-    height: 32px;
-}
-
-#logo {
-    width: 120px;
-    border: 1px solid #F1EFEA;
-    border-radius: 10px;
-}
-
-
-
-main {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
 
 #note-form, #note-list {
     flex: 1;
